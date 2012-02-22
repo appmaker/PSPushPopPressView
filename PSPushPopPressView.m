@@ -112,6 +112,7 @@
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     pushPopPressViewDelegate = nil;
+    [super dealloc];
 }
 
 - (void)setInitialFrame:(CGRect)initialFrame {
